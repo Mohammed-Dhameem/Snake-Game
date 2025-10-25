@@ -32,8 +32,6 @@ Snake_Game/
 ├── pom.xml
 └── README.md
 
-text
-
 ## 🎮 Controls (Coming Soon)
 - Arrow Keys: Move snake
 - Space: Pause/Resume
@@ -53,8 +51,8 @@ text
 ## 🏗️ Building from Source
 
 ### Clone Repository
-git clone git@github.com:Mohammed-Dhameem/Snake_Game.git
-cd Snake_Game
+git clone https://github.com/Mohammed-Dhameem/Snake-Game.git
+cd Snake-Game
 
 text
 
