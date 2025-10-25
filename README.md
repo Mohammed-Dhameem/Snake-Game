@@ -23,11 +23,17 @@ Right-click `pom.xml` → Run As → Maven build... → Goals: `javafx:run`
 ## 📁 Project Structure
 Snake_Game/
 ├── src/
-│ ├── game/ # Main application & game engine
-│ ├── ui/ # UI components (GamePanel, etc.)
-│ ├── model/ # Game logic (Snake, Food)
-│ └── controller/ # Input handling
+
+│   ├── game/          # Main application & game engine
+
+│   ├── ui/            # UI components (GamePanel, etc.)
+
+│   ├── model/         # Game logic (Snake, Food)
+
+│   └── controller/    # Input handling
+
 ├── pom.xml
+
 └── README.md
 
 ## 🎮 Controls (Coming Soon)
