@@ -17,8 +17,6 @@ A classic Snake game built with JavaFX for Linux and Windows.
 ### Using Maven
 mvn javafx:run
 
-text
-
 ### In Eclipse
 Right-click `pom.xml` → Run As → Maven build... → Goals: `javafx:run`
 
@@ -52,15 +50,12 @@ Snake_Game/
 
 ### Clone Repository
 git clone https://github.com/Mohammed-Dhameem/Snake-Game.git
-cd Snake-Game
 
-text
+cd Snake-Game
 
 ### Build and Run
 mvn clean install
 mvn javafx:run
-
-text
 
 ## 👨‍💻 Author
 **Mohammed Dhameem**
