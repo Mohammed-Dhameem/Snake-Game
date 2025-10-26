@@ -1,85 +1,67 @@
-# 🐍 Snake Game
+# Snake Game
 
-A classic Snake game built with JavaFX for Linux and Windows.
+Welcome to the Snake Game project! This is a simple but fun game built using Java 21 and JavaFX 25.0.1.
 
-## 🛠️ Tech Stack
-- **Java 21** (LTS)
-- **JavaFX 21.0.1**
-- **Maven**
-- **Eclipse IDE**
+## Project Overview
 
-## 📋 Prerequisites
-- JDK 21 or higher
-- Maven 3.8+
+This project includes:
 
-## 🚀 Running the Game
+- Core game logic implemented in Java.
+- User interface built with JavaFX.
+- The compiled game can be run as a standalone JAR or packaged app.
 
-### Using Maven
-mvn javafx:run
+## Current Project Structure
 
-### In Eclipse
-Right-click `pom.xml` → Run As → Maven build... → Goals: `javafx:run`
+- The runnable game JAR file is now located in the `Jar` folder as:
 
-## 📁 Project Structure
-Snake_Game/
-├── src/
+  `Jar/SnakeGame.jar`
 
-│   ├── game/          # Main application & game engine
+- All packaging folders (`input`, `SnakeGame` app-image) have been cleaned up for simplicity.
 
-│   ├── ui/            # UI components (GamePanel, etc.)
+## Prerequisites
 
-│   ├── model/         # Game logic (Snake, Food)
+- Java Development Kit (JDK) 21 installed.
+- JavaFX SDK 25.0.1 (Linux version if using Linux).
+- Required native libraries on your system for JavaFX rendering:
 
-│   └── controller/    # Input handling
+  For Linux, install these packages:
 
-├── pom.xml
+sudo apt install libgtk-3-0 libgl1 libglu1-mesa mesa-utils libasound2t64 libgdk-pixbuf2.0-0 libx11-xcb1 libxcomposite1 libxrandr2
 
-└── README.md
+text
 
-## 🎮 Controls (Coming Soon)
-- Arrow Keys: Move snake
-- Space: Pause/Resume
-- R: Restart
+## Running the Game
 
-## 💻 System Requirements
+Run the game jar with this command:
 
-### For Running the Game
-- Java 21 or higher (if using JAR)
-- OR use bundled installer (no Java needed)
+export PATH_TO_FX=/path/to/javafx-sdk-25.0.1/lib
+java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.graphics -jar Jar/SnakeGame.jar
 
-### Supported Platforms
-- ✅ Windows 10/11
-- ✅ Ubuntu 20.04+ / Linux
-- ✅ macOS 11+
+text
 
-## 🏗️ Building from Source
+Replace `/path/to/javafx-sdk-25.0.1/lib` with the actual path where you extracted the JavaFX SDK on your system.
 
-### Clone Repository
-git clone https://github.com/Mohammed-Dhameem/Snake-Game.git
+## Troubleshooting
 
-cd Snake-Game
+- If the game fails with graphics errors, try software rendering mode:
 
-### Build and Run
-mvn clean install
-mvn javafx:run
+java --enable-native-access=javafx.graphics --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.graphics -Dprism.order=sw -jar Jar/SnakeGame.jar
 
-## 👨‍💻 Author
-**Mohammed Dhameem**
-- GitHub: [@Mohammed-Dhameem](https://github.com/Mohammed-Dhameem)
+text
 
-## 📝 License
-MIT License
+- On Linux, ensure you are running in a graphical desktop environment and have installed all the required native libraries listed above.
 
-## 🔧 Development Status
-🚧 Work in Progress - Game logic implementation in progress!
+## Notes
 
-## 🎯 Roadmap
-- [x] Project setup with JavaFX and Maven
-- [x] GitHub repository with SSH configuration
-- [ ] Snake movement logic
-- [ ] Food generation and collision
-- [ ] Score tracking
-- [ ] Game over and restart
-- [ ] Sound effects
-- [ ] High score system
-- [ ] Bundled installers for Linux and Windows
+- Use matching Java and JavaFX versions for your platform.
+- Windows `.exe` packaging requires building on Windows with Windows JavaFX SDK.
+- Java 21 and JavaFX 25.0.1 are compatible and used in this project.
+- The warnings about "restricted method" are normal on recent JDKs and can be suppressed using the native access flag.
+
+## Contributions and Feedback
+
+Feel free to contribute or report issues via GitHub repository.
+
+---
+
+Enjoy playing and happy coding!
