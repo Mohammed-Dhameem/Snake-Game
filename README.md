@@ -17,22 +17,24 @@ A classic Snake game built with JavaFX for Linux and Windows.
 ### Using Maven
 mvn javafx:run
 
-text
-
 ### In Eclipse
 Right-click `pom.xml` → Run As → Maven build... → Goals: `javafx:run`
 
 ## 📁 Project Structure
 Snake_Game/
 ├── src/
-│ ├── game/ # Main application & game engine
-│ ├── ui/ # UI components (GamePanel, etc.)
-│ ├── model/ # Game logic (Snake, Food)
-│ └── controller/ # Input handling
-├── pom.xml
-└── README.md
 
-text
+│   ├── game/          # Main application & game engine
+
+│   ├── ui/            # UI components (GamePanel, etc.)
+
+│   ├── model/         # Game logic (Snake, Food)
+
+│   └── controller/    # Input handling
+
+├── pom.xml
+
+└── README.md
 
 ## 🎮 Controls (Coming Soon)
 - Arrow Keys: Move snake
@@ -53,16 +55,13 @@ text
 ## 🏗️ Building from Source
 
 ### Clone Repository
-git clone git@github.com:Mohammed-Dhameem/Snake_Game.git
-cd Snake_Game
+git clone https://github.com/Mohammed-Dhameem/Snake-Game.git
 
-text
+cd Snake-Game
 
 ### Build and Run
 mvn clean install
 mvn javafx:run
-
-text
 
 ## 👨‍💻 Author
 **Mohammed Dhameem**
