@@ -28,16 +28,12 @@ This project includes:
 
 sudo apt install libgtk-3-0 libgl1 libglu1-mesa mesa-utils libasound2t64 libgdk-pixbuf2.0-0 libx11-xcb1 libxcomposite1 libxrandr2
 
-text
-
 ## Running the Game
 
 Run the game jar with this command:
 
 export PATH_TO_FX=/path/to/javafx-sdk-25.0.1/lib
 java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.graphics -jar Jar/SnakeGame.jar
-
-text
 
 Replace `/path/to/javafx-sdk-25.0.1/lib` with the actual path where you extracted the JavaFX SDK on your system.
 
@@ -46,8 +42,6 @@ Replace `/path/to/javafx-sdk-25.0.1/lib` with the actual path where you extracte
 - If the game fails with graphics errors, try software rendering mode:
 
 java --enable-native-access=javafx.graphics --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.graphics -Dprism.order=sw -jar Jar/SnakeGame.jar
-
-text
 
 - On Linux, ensure you are running in a graphical desktop environment and have installed all the required native libraries listed above.
 
